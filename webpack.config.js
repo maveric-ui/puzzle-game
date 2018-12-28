@@ -34,7 +34,7 @@ module.exports = {
     },
     plugins: [ 
         new ExtractTextPlugin({
-            filename: '[name].[hash].css'
+            filename: 'style.css'
         }),
         new HtmlWebpackPlugin({
             inject: false,
