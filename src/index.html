@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Puzzle Game</title>
+</head>
+
+<body>
+    <div class="wrappper">
+        <header class="header">
+            <h1 class="logo">Puzzle Game</h1>
+        </header>
+        <main class="container-fluid">
+            <aside class="side-bar">
+                <div class="game-config">
+                    <button type="button" class="btn btn-success btn-start">Start</button>
+                    <h4 class="game-config__titile">Game Configuration</h4>
+                    <form>
+                        <div class="form-group">
+                            <label class="label" for="select-cards">Options</label>
+                            <select class="custom-select select-cards" id="select-cards">
+                                <option selected disabled>Choose...</option>
+                                <option value="6">6</option>
+                                <option value="8">8</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="label" for="select-cards">Options</label>
+                            <select class="custom-select select-cards" id="select-cards">
+                                <option selected disabled>Choose...</option>
+                                <option value="6">6</option>
+                                <option value="8">8</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="label" for="select-cards">Options</label>
+                            <select class="custom-select select-cards" id="select-cards">
+                                <option selected disabled>Choose...</option>
+                                <option value="6">6</option>
+                                <option value="8">8</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </aside>
+            <div class="content">
+                <div class="field-of-cards">
+                    <ul class="cards-list">
+                        <li class="cards-item">
+                            <div class="card">
+                                <div></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+
+</html>
